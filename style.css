@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Miriam Libre';
+}
+
+
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    overflow-x: hidden;
+
+
+}
+
+.section {
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    margin: 0 2%;
+    position: relative;
+    position: relative;
+    top: -230px;
+}
+
+.bg {
+    background-color: rgb(2, 2, 2);
+}
+
+/* // Header   */
+header { 
+    position: relative;
+
+}
+header .container {
+    top: 0;
+
+}
+
+header .container .header__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: -180px;
+}
+
+.header__flex-illustra {
+    order: 1;
+    width: 60%;
+}
+
+.header__flex-illustra img {
+    background-size: contain;
+    background-repeat: no-repeat;
+        position: relative;
+    top: -25px;
+    left: -100px;
+    
+
+
+}
+
+.header__flex-topinfo {
+    order: 2;
+    color: whitesmoke;
+    width: 30%;
+    text-align: right;
+    margin: 0 0 0 0;
+
+}
+
+.header__flex-social {
+    width: 10%;
+    order: 3;
+    color: whitesmoke;
+    margin: 0px;
+}
+
+.header__flex-social p {
+    text-align: center;
+
+}
+
+
+.header__flex-social p {
+    display: inline-block;
+}
+
+.header__flex-social p a {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+
+/* // greetings  */
+
+
+.greetings__box {
+
+    width: 800px;
+    text-align: center;
+    position: relative;
+    top: 185px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.greetings__box-overlay {
+    position: relative;
+
+}
+
+.greetings__box-overlay h1,
+.greetings__box-overlay p {
+    color: #f5f5f5;
+}
+
+/* // Services  */
+
+
+.service .container {
+    position: relative;
+    top: 0px;
+    color: #f5f5f5;
+    margin: 0 2%;
+}
+
+.service .container .text-box {
+    color: whitesmoke;
+    text-align: left;
+    border-bottom: 2.5px solid #6F6F6F;
+    margin-top: 25px;
+}
+
+.service__companies {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    align-items: center;
+
+}
+
+.service__companies-box {
+    display: relative;
+    padding: 15px;
+    width: 50%;
+    margin-top: 25px;
+}
+
+.service__companies-box:nth-of-type(2) {
+    order: 2;
+}
+
+.service__companies-box-logo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px;
+
+}
+
+.service__companies-box-logo img {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.service__companies h3 {
+    margin-bottom: 10px;
+}
+
+.service__companies p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.service__illustra img {
+    position: relative;
+    right: -600px;
+    top: -150px;
+    transform: rotate(180deg);
+
+}
+
+/* // Content  */
+
+
+
+.content .container {
+    margin: 0 2%;
+    position: relative;
+
+}
+
+.arrow-up {
+    background-color: rgb(2, 2, 2);
+    position: relative;
+
+
+}
+
+.arrow-up .arrow-up-bg {
+    position: relative;
+    background-color: rgb(2, 2, 2);
+    width: 50px;
+    border-radius: 100px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-up i {
+    font-size: 50px;
+    color: #b12a24;
+}
+
+
+.content__flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    margin-top: 50px;
+
+
+}
+
+.content__flex-space {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    text-align: left;
+
+}
+
+.content__flex-space:hover {
+    transform: scale(1.1);
+}
+
+.content__flex-space-box {
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(224, 224, 224, 0.5);
+    height: 100%;
+
+}
+
+.content__flex-space-box-img {
+    min-height: 200px;
+
+
+}
+
+.content__flex-space-box .content__flex-space-box-wraper h2 {
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin: 15px;
+}
+
+.content__flex-space-box .content__flex-space-box-wraper p {
+    color: #f5f5f5;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    margin: 15px;
+}
+
+
+.content__flex-space-box-img img {
+    width: 100%;
+
+}
+
+
+
+.content .container .text-box {
+    color: whitesmoke;
+    margin-top: 250px;
+    text-align: left;
+    border-bottom: 2.5px solid #6F6F6F;
+}
+
+
+
+
+
+.content__flex-space-box button {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    background-color: transparent;
+    margin: 20px;
+    background-color: #b12a24;
+    outline: 0;
+    border: .15em solid rgba(224, 224, 224, 0.5);
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    -webkit-transition-duration: .5s;
+
+}
+
+
+.content__flex-space-box button a {
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+/* // Web dev */
+
+.webdev {
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+    background-color: #6F6F6F;
+
+}
+
+.webdev .container {
+    top: -80px;
+    margin: 0 2%;
+    min-height: 700px;
+    color: white;
+
+}
+
+
+
+.webdev .container .arrow-up .arrow-up-bg {
+    background-color: #6f6f6f;
+
+}
+
+.webdev .container .arrow-up {
+    background-color: #6F6F6F;
+
+}
+
+.webdev .container .text-box {
+    border-bottom: 1px solid whitesmoke;
+    text-align: left;
+    margin-top: 100px;
+
+}
+
+.webdev .container .text-box h2 {
+    padding-top: 15px;
+}
+
+.webdev__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    margin-top: 50px;
+
+}
+
+.webdev__flex-space {
+
+    padding: 30px;
+    width: 33.33%;
+    text-align: left;
+}
+
+.webdev__flex-space:hover {
+    transform: scale(1.1);
+}
+
+.webdev__flex-space-box {
+     min-width: 400px;
+     min-height: 450px;
+    border-radius: 3px;
+    border: 2px solid rgba(224, 224, 224, .5);
+    box-shadow: 0 1px 1px 0 rgba(224, 224, 224, 0.5);
+
+
+}
+
+
+
+.webdev__flex-space-box img {
+    width: 100%;height: 100%;
+}
+
+.webdev__flex-space-box .webdev__flex-space-box-wraper h2 {
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin: 15px;
+    width: 100%;
+}
+
+.webdev__flex-space-box .webdev__flex-space-box-wraper p {
+    color: #f5f5f5;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    margin: 15px;
+    width: 100%;
+}
+
+
+.webdev__flex-space-box .webdev__flex-space-box-wraper button {
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    background-color: transparent;
+    margin: 20px;
+    background-color: #b12a24;
+    outline: 0;
+    border: .15em solid rgba(224, 224, 224, 0.5);
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    -webkit-transition-duration: .5s;
+
+}
+
+.webdev__flex-space-box button a {
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* // blackspace  */
+
+
+.blackspace {
+    width: 100%;
+    height: 150px;
+}
+
+/* // SVG illustra  */
+
+.illustra2 .container {
+    width: 100%;
+    margin: 0 2%;
+    position: relative;
+
+
+
+}
+
+.illustra2 .container .svg2 {
+    position: relative;
+    top: 220px;
+    left: 0;
+
+}
+
+.illustra2__flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.illustra2__flex-1 {
+    order: 1;
+    width: 20%;
+    color: #f5f5f5;
+
+}
+
+
+.illustra2__flex-1 h1,
+.illustra2__flex-1 p {
+    color: #f5f5f5;
+    text-align: justify;
+}
+
+.illustra2__flex-1 h1,
+.illustra2__flex-1 p {
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.illustra2__flex-2 {
+    order: 2;
+    width: 80%;
+}
+
+/* !  Animations  */
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 3px solid #b12a24;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .30em;
+    /* Adjust as needed */
+    animation:
+        typing 3s steps(45, end),
+        blink-caret .75s step-end infinite;
+
+}
+
+.fadeInAnimation {
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
+.flashAnimation {
+    animation-name: flashAnimation;
+    animation-duration: 3s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#leaf2,
+#leaf1 {
+    animation: parachute 4s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man {
+    animation: animationMan 4s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#websitegroup {
+    animation: passing 4s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+
+
+/*   */
+/* // footer  */
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+
+
+
+/* ! Keyframes */
+
+@keyframes passing {
+    from {
+        transform: translate(-150%, 0);
+    }
+
+    to {
+        transform: translate(150%, 1);
+    }
+}
+
+/* 
+@keyframes animationWebsite { 
+    0% {
+        opacity: 0;
+        transform: translate(0, -150px) rotate(20deg);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(0, 100px) rotate(-15deg);
+    }
+
+    25% {
+        transform: translate(0, 250px) rotate(10deg);
+    }
+
+    30% {
+        transform: translate(0, 350px) rotate(-5deg);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translate(0, 570px) rotate(0deg);
+    }
+
+    45%,
+    100% {
+        opacity: 0;
+        transform: translate(0, 570px);
+    }
+    } */
+
+@keyframes parachute {
+
+
+    0% {
+        transform: translate(0, -100px) rotate(-20deg) scale(1);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(0, -75px) rotate(-15deg);
+    }
+
+    50% {
+        transform: translate(0, -50px) rotate(-10deg);
+    }
+
+    75% {
+        transform: translate(0, -25px) rotate(0deg) scale(0.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes leaf {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@keyframes animationMan {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(10deg);
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #b12a24;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flashAnimation {
+    50% {
+        border-color: #b12a24;
+    }
+}
+
+/* ! Queries  */
