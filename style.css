@@ -113,10 +113,8 @@ header .container .header__flex {
 
 /* // greetings  */
 
-
-#header .container>.greetings__box {
-
-    width: 800px;
+#header header .container .greetings__box {
+    width: 80%;
     text-align: center;
     position: relative;
     top: 50px;
@@ -131,6 +129,12 @@ header .container .header__flex {
     color: #f5f5f5;
     margin-top: 20px;
 }
+
+section.blackspace .container .bg>.greetings__box {
+    position: relative;
+    top: 200px;
+}
+
 
 /* // Services  */
 
@@ -334,7 +338,7 @@ header .container .header__flex {
 }
 
 
-
+/*
 .webdev .container .arrow-up .arrow-up-bg {
     background-color: #6f6f6f;
 
@@ -343,7 +347,7 @@ header .container .header__flex {
 .webdev .container .arrow-up {
     background-color: #6F6F6F;
 
-}
+} */
 
 .webdev .container .text-box {
     border-bottom: 1px solid whitesmoke;
@@ -695,24 +699,36 @@ header .container .header__flex {
 /* ! Queries  */
 
 @media screen and (max-width:768px) {
+    #header header .container .greetings__box {
+        width: 80%
+    }
+
+    section.blackspace .container .bg>.greetings__box {
+        width: 80%;
+    }
 
     .content__flex {
         flex-direction: column;
+
+        .content__flex-space {
+            width: 100%;
+        }
+
+        .webdev__flex {
+            flex-direction: column;
+        }
+
+        .webdev__flex-space {
+            width: 100%
+        }
     }
 
-    .content__flex-space {
-        width: 100%;
-    }
+    @media screen and (max-width:768px) {
+        #header header .container .greetings__box {}
 
-    .webdev__flex {
-        flex-direction: column;
+        section.blackspace .container .bg>.greetings__box {
+            width: 50%;
+        }
 
-    }
-
-    .webdev__flex-space {
-
-
-        width: 100%;
 
     }
-}
