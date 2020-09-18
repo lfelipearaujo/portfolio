@@ -33,10 +33,11 @@ body {
 }
 
 /* // Header   */
-header { 
+header {
     position: relative;
 
 }
+
 header .container {
     top: 0;
 
@@ -44,40 +45,52 @@ header .container {
 
 header .container .header__flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    top: -180px;
+    top: -400px;
+    align-items: center;
 }
 
-.header__flex-illustra {
+/* .header__flex-illustra {
     order: 1;
     width: 60%;
-}
-
-.header__flex-illustra img {
+} */
+// not sure if im gonna use it
+/* .header__flex-illustra img {
     background-size: contain;
     background-repeat: no-repeat;
-        position: relative;
-    top: -25px;
-    left: -100px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+
+
+
+
+
+.header__flex-topinfo {
+    color: whitesmoke;
+    width: 50%;
+    ;
 
 }
 
-.header__flex-topinfo {
-    order: 2;
+.header__flex-topinfo h1 {
     color: whitesmoke;
-    width: 30%;
-    text-align: right;
-    margin: 0 0 0 0;
+}
+
+.header__flex-topinfo p {
+    color: whitesmoke;
 
 }
 
 .header__flex-social {
-    width: 10%;
-    order: 3;
+    width: 50%;
+    margin-top: 20px;
     color: whitesmoke;
-    margin: 0px;
+
 }
 
 .header__flex-social p {
@@ -91,7 +104,7 @@ header .container .header__flex {
 }
 
 .header__flex-social p a {
-    color: whitesmoke;
+    color: #b12a24;
     padding: 10px;
     font-size: 30px;
 }
@@ -101,24 +114,22 @@ header .container .header__flex {
 /* // greetings  */
 
 
-.greetings__box {
+#header .container>.greetings__box {
 
     width: 800px;
     text-align: center;
     position: relative;
-    top: 185px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.greetings__box-overlay {
-    position: relative;
 
-}
 
 .greetings__box-overlay h1,
 .greetings__box-overlay p {
     color: #f5f5f5;
+    margin-top: 20px;
 }
 
 /* // Services  */
@@ -366,8 +377,7 @@ header .container .header__flex {
 }
 
 .webdev__flex-space-box {
-     min-width: 400px;
-     min-height: 450px;
+
     border-radius: 3px;
     border: 2px solid rgba(224, 224, 224, .5);
     box-shadow: 0 1px 1px 0 rgba(224, 224, 224, 0.5);
@@ -378,7 +388,8 @@ header .container .header__flex {
 
 
 .webdev__flex-space-box img {
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .webdev__flex-space-box .webdev__flex-space-box-wraper h2 {
@@ -479,6 +490,10 @@ header .container .header__flex {
     width: 80%;
 }
 
+/* // Mobile Sections */
+
+/* #section__mobile { display: none;} */
+
 /* !  Animations  */
 
 .typewriter {
@@ -537,14 +552,7 @@ header .container .header__flex {
 
 
 
-/*   */
-/* // footer  */
 
-footer {
-    color: white;
-    text-align: center;
-    font-size: 10px;
-}
 
 
 
@@ -563,8 +571,8 @@ footer {
     }
 }
 
-/* 
-@keyframes animationWebsite { 
+/*
+@keyframes animationWebsite {
     0% {
         opacity: 0;
         transform: translate(0, -150px) rotate(20deg);
@@ -686,27 +694,25 @@ footer {
 
 /* ! Queries  */
 
-@media screen and (max-width:768px) { 
-    .header__flex-illustra img {
-      
-  
-        left: -350px;
+@media screen and (max-width:768px) {
+
+    .content__flex {
+        flex-direction: column;
+    }
+
+    .content__flex-space {
+        width: 100%;
+    }
+
+    .webdev__flex {
+        flex-direction: column;
 
     }
-.content__flex {
-    flex-direction: column;
-   }
-   .content__flex-space {
+
+    .webdev__flex-space {
+
+
         width: 100%;
-}
-.webdev__flex {
-    flex-direction: column;
 
-}
-.webdev__flex-space {
-
-
-    width: 100%;
-
-}
+    }
 }
