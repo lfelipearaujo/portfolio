@@ -1,3 +1,5 @@
+/* ! Main Properties */
+/* TODO fix margins of titls of the sections  */
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +7,18 @@
     font-family: 'Miriam Libre';
 }
 
+:root {
+    --black: rgb(2,2,2);
+    --red: var(#b12a24):
+}
 
 
 html,
 body {
     height: 100%;
-    background-color: rgb(2, 2, 2);
+    background-color: var(--black);
     overflow-x: hidden;
+     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 
 
 }
@@ -24,12 +31,13 @@ body {
     text-align: center;
     margin: 0 2%;
     position: relative;
-    position: relative;
-    top: -230px;
+    width: 100%;
+
 }
 
-.bg {
-    background-color: rgb(2, 2, 2);
+
+.section {
+    height: 950px;
 }
 
 /* // Header   */
@@ -38,17 +46,15 @@ header {
 
 }
 
-header .container {
-    top: 0;
 
-}
 
 header .container .header__flex {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    top: -400px;
+    top:20px ;
+
     align-items: center;
 }
 
@@ -73,7 +79,6 @@ header .container .header__flex {
 .header__flex-topinfo {
     color: whitesmoke;
     width: 50%;
-    ;
 
 }
 
@@ -104,7 +109,7 @@ header .container .header__flex {
 }
 
 .header__flex-social p a {
-    color: #b12a24;
+    color: var(--red);
     padding: 10px;
     font-size: 30px;
 }
@@ -113,15 +118,18 @@ header .container .header__flex {
 
 /* // greetings  */
 
-#header header .container .greetings__box {
-    width: 80%;
-    text-align: center;
-    position: relative;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
+#header  .container .greetings__box {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+
+}
+#header header .container {
+    position: relative;
+    height: 950px;
+}
 
 
 .greetings__box-overlay h1,
@@ -130,10 +138,7 @@ header .container .header__flex {
     margin-top: 20px;
 }
 
-section.blackspace .container .bg>.greetings__box {
-    position: relative;
-    top: 200px;
-}
+
 
 
 /* // Services  */
@@ -301,7 +306,7 @@ section.blackspace .container .bg>.greetings__box {
     text-align: center;
     background-color: transparent;
     margin: 20px;
-    background-color: #b12a24;
+    background-color: var(--red);
     outline: 0;
     border: .15em solid rgba(224, 224, 224, 0.5);
     cursor: pointer;
@@ -318,6 +323,11 @@ section.blackspace .container .bg>.greetings__box {
     text-decoration: none;
 
 }
+
+
+section.s3 .container .text-box
+
+
 
 /* // Web dev */
 
@@ -421,7 +431,7 @@ section.blackspace .container .bg>.greetings__box {
     text-align: center;
     background-color: transparent;
     margin: 20px;
-    background-color: #b12a24;
+    background-color: var(--red);
     outline: 0;
     border: .15em solid rgba(224, 224, 224, 0.5);
     cursor: pointer;
@@ -436,14 +446,26 @@ section.blackspace .container .bg>.greetings__box {
     font-size: 13px;
     text-decoration: none;
 }
+/* // Last sectiion  */
 
-/* // blackspace  */
 
-
-.blackspace {
-    width: 100%;
-    height: 150px;
+section.s6 {
+    position: relative;;
+    height: 950px;
 }
+
+section.s6 >.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+
+
 
 /* // SVG illustra  */
 
@@ -503,7 +525,7 @@ section.blackspace .container .bg>.greetings__box {
 .typewriter {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: 3px solid #b12a24;
+    border-right: 3px solid var(--red);
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -675,7 +697,7 @@ section.blackspace .container .bg>.greetings__box {
     }
 
     50% {
-        border-color: #b12a24;
+        border-color: var(--red);
     }
 }
 
@@ -692,7 +714,7 @@ section.blackspace .container .bg>.greetings__box {
 
 @keyframes flashAnimation {
     50% {
-        border-color: #b12a24;
+        border-color: var(--red);
     }
 }
 
@@ -703,9 +725,7 @@ section.blackspace .container .bg>.greetings__box {
         width: 80%
     }
 
-    section.blackspace .container .bg>.greetings__box {
-        width: 80%;
-    }
+
 
     .content__flex {
         flex-direction: column;
@@ -726,9 +746,7 @@ section.blackspace .container .bg>.greetings__box {
     @media screen and (max-width:768px) {
         #header header .container .greetings__box {}
 
-        section.blackspace .container .bg>.greetings__box {
-            width: 50%;
-        }
+
 
 
     }

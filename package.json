@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my oficial portfolio on github",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfelipearaujo/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfelipearaujo/portfolio/issues"
+  },
+  "homepage": "https://github.com/lfelipearaujo/portfolio#readme"
+}
