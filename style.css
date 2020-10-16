@@ -195,10 +195,7 @@ nav ul li a:hover {
     min-height: 300px;
 }
 
-.greetings__box-overlay  {
-    height: 300px;
-    position: relative;;
-}
+
 
 
 /* .greetings__box-overlay h1,
@@ -209,6 +206,8 @@ nav ul li a:hover {
     position: relative;
 
 } */
+
+
 .greetings__box-wraper {
     color:whitesmoke;
     text-align: center;
@@ -219,7 +218,9 @@ nav ul li a:hover {
 }
 
 .greetings__box-wraper h1 {
-    display: inline-block
+    display: block;
+    margin-left: 0;
+
 }
 
 #header header .container {
@@ -228,7 +229,9 @@ nav ul li a:hover {
 }
 
 
-
+break1 {
+    display: none;
+}
 
 
 
@@ -857,4 +860,24 @@ section.s6 >.container {
         .service__companies .service__companies-box {
             width: 100%;
         }
+    }
+
+    @media screen and (max-width: 480px ) {
+        nav {
+            display: none;
+        }
+        .typewriter {
+            animation: none;
+        }
+        .greetings__box-wraper  {
+            display: block;
+            word-break: break-all;
+        }
+        break1 {
+            display: block;
+            margin-top: 0;
+
+      height: 0;
+        }
+
     }
