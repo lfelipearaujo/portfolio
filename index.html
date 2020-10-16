@@ -16,17 +16,27 @@
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="animate.css">
 </head>
-
+<!-- TODO edit JS button up not working -->
 <body>
-    <div id="fullpage">
+     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-long-arrow-alt-up"> dasdasdsadasdsa</i></button>
         <section id="header" class="header section  s1">
             <header>
                 <div class="container">
+
+
                     <div class="header__flex">
-                        <!-- <div class="header__flex-illustra illustration">
-                            <img src="illustra.svg" alt="" srcset="">
+
+                        <div class="header__menu-grid">
+                       <nav>
+                            <ul>
+                                <li><a href="#header">Home</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="#content">Content</a></li>
+                                <li><a href="#webdev">Web Development</a></li>
+                            </ul>
+                       </nav>
                         </div>
-                        <!-- flex illustra -->
+
                         <div class="header__flex-topinfo">
                             <h1>Luiz Felipe de Figueiredo Araujo</h1>
                             <p> luizfffaraujo@gmail.com | +1.647.570.2811</p>
@@ -42,18 +52,21 @@
                     </div>
                     <!-- header flex -->
                     <div class="greetings__box">
-                        <div class="greetings__box-overlay ">
-                            <h1 class="typewriter title">Hello, welcome to my <span
+                        <div class="greetings__box-wraper">
+                            <h1 class="typewriter ">Hello, welcome to my <span
                                     style="color: #b12a24;">Portfolio</span>. </h1>
                             <p class="fadeInAnimation">Please, make yourself comfortable. </p>
                         </div>
+                        <!-- box wraper  -->
+                    </div>
+
                     </div>
                     <!-- greetings  -->
                 </div>
                 <!-- container -->
             </header>
         </section>
-        <section class="service section s2">
+        <section id="service" class="service section s2">
             <div class="container">
                 <div class="text-box">
                     <h2 class="title">Products & Services:</h2>
@@ -93,7 +106,10 @@
             <!-- container -->
         </section>
         <!-- service -->
-        <section class="content section s3">
+        <!-- <div class="arrow-upp">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </div> -->
+        <section id="content" class="content section s3">
             <div class="container">
                 <div class="text-box">
                     <h2 class="title">Digital media content & writing:</h2>
@@ -101,7 +117,7 @@
                 </div>
                 <!-- textbox   -->
                 <div class="content__flex">
-                    <div class="content__flex-space">
+                   <div class="content__flex-space">
                         <div class="content__flex-space-box">
                             <div class="content__flex-space-box-img">
                                 <img src="santorinites.jpeg" alt="">
@@ -162,17 +178,9 @@
                         <!-- content flex space box  -->
                     </div>
                     <!-- content flex -->
-                </div>
-                <!-- container   -->
-        </section>
-        <section class="content section s3">
-            <div class="container">
-                <div class="text-box" style="text-align:right; margin-right: 50px;">
-                    <h2 class="title">More digital media content & writing:</h2>
-                    <div class="text-box-line"></div>
-                </div>
-                <!-- textbox   -->
-                <div class="content__flex">
+                    <!-- container   -->
+
+
                     <div class="content__flex-space">
                         <div class="content__flex-space-box">
                             <div class="content__flex-space-box-img">
@@ -226,19 +234,20 @@
                             <div class="content__flex-space-box-wraper">
                                 <h2>Where: Cooknst Blog</h2>
                                 <button><a target="_blank" href="https://cooknst.com/hot-news/beats-whisk-dj-leep/">Read
-                                        more</a></button>
+                                    more</a></button>
+                                </div>
+                                <!-- flex space box wraper  -->
                             </div>
-                            <!-- flex space box wraper  -->
-                        </div>
-                        <!-- content flex space box  -->
+                            <!-- content flex space box  -->
                     </div>
                     <!-- content flex space  -->
-                </div>
-                <!-- content flex -->
-            </div>
-            <!-- container   -->
+
+                    </div>
+                    <!-- container   -->
         </section>
-        <!-- content -->
+                <!-- content -->
+
+            <!-- content flex maiin -->
         <!-- <section id="section__mobile" class="section s4 ">
             <p>section five</p>
         </section> -->
@@ -396,10 +405,11 @@
                 </div>
             </div>
         </section>
-        <section class="webdev section s5">
+        <section id="webdev" class="webdev section s5">
             <div class="container">
                 <div class="text-box">
                     <h2 class="title">Web Development: Practice & Personal Projects</h2>
+                    <div class="text-box-line"></div>
                 </div>
                 <!-- textbox   -->
                 <div class="webdev__flex">
@@ -454,7 +464,7 @@
         <section class=" section s6">
             <div class="container">
                     <div class="greetings__box">
-                        <div class="greetings__box-overlay fadeOut">
+                        <div class="greetings__box-wraper fadeOut">
                             <h1 class="typewriter title">Thank you for your <span style="color: #b12a24;">time</span>.
                             </h1>
                             <p>Produly made from scratch.</p>
@@ -462,8 +472,9 @@
                     </div>
                     <!-- greetings  -->
             </div>
-        </section>
-    </div>
+            <!-- container  -->
+      </section>
+
     <!-- ! Libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
