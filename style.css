@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
      margin: 0 auto;
-
+    scroll-behavior: smooth;
 
 }
 
@@ -162,7 +162,7 @@ nav ul li a:hover {
 }
 /* TODO fix jsnot working */
 #myBtn {
-  display: none; /* Hidden by default */
+  display: block;
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
@@ -173,8 +173,9 @@ nav ul li a:hover {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  border-radius: 12px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */;
+
 }
 
 #myBtn:hover {
