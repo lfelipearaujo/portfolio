@@ -22,4 +22,20 @@ function topFunction() {
 
 scrollFunction();
 topFunction();
-c
+
+// ! Change page color
+
+
+function changeBgColor() {
+  var btnChangeColor = document.querySelector('.changeColor');
+  var bodyBg = document.querySelector('body');
+  var textBoxLine = document.querySelectorAll('.text-box-line');
+
+  btnChangeColor.addEventListener('click', function () {
+    bodyBg.style.backgroundColor = "var(--grey)";
+    textBoxLine.style.borderTop = "2px solid whitesmoke";
+  })
+  return false;
+}
+
+changeBgColor();

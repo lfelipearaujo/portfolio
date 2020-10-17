@@ -5,13 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Miriam Libre';
+
 }
 
 :root {
     --black: rgb(2,2,2);
     --red: #b12a24;
-    --grey: #6f6f6f
-
+    --grey: #6f6f6f;
+    --white: whitesmoke;
 
 
 }
@@ -25,7 +26,7 @@ body {
      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
      margin: 0 auto;
     scroll-behavior: smooth;
-
+    color: var(--black) !important;
 }
 
 .section {
@@ -124,7 +125,7 @@ header .container .header__flex {
 
 header .header__flex .header__menu-grid ul{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: column;
     grid-gap: 10px;
     padding: 0;
@@ -146,7 +147,10 @@ nav ul li:hover {
 nav ul li a:hover {
                     color: var(--red);
                 }
-
+nav ul li:hover:last-child {
+    scale: 1.2;
+    transform: rotate(3deg);
+}
 .arrow-upp {
     color: var(--red);
     text-align: left;
@@ -160,7 +164,6 @@ nav ul li a:hover {
     bottom: 50px;
 
 }
-/* TODO fix jsnot working */
 #myBtn {
   display: block;
   position: fixed; /* Fixed/sticky position */
@@ -179,8 +182,19 @@ nav ul li a:hover {
 }
 
 #myBtn:hover {
-  background-color: var(--grey); /* Add a dark-grey background on hover */
-}
+  background-color: var(--grey); /* Add a dark-grey background on hover */ }
+
+  /* TODO btn nnot working bc js refreshes the page */
+  .changeColor {
+      display: none;
+      color: whitesmoke;
+    background-color: var(--red);
+    border: 0;
+    outline: 0;
+    width: 100px;height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    }
 
 /* // greetings  */
 
