@@ -441,7 +441,7 @@ section.service .container {
 
 .webdev {
     width: 100%;
-    min-height: 700px;
+    min-height: 800px;
     position: relative;
     background-color: var(--grey);
 
