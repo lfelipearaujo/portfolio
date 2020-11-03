@@ -443,29 +443,19 @@ section.service .container {
     width: 100%;
     min-height: 800px;
     position: relative;
+
     background-color: var(--grey);
 
 }
 
 .webdev .container {
-    top: px;
+
     margin: 0 2%;
     min-height: 700px;
     color: white;
 
 }
 
-
-/*
-.webdev .container .arrow-up .arrow-up-bg {
-    background-color: var(--grey);
-
-}
-
-.webdev .container .arrow-up {
-    background-color: var(--grey);
-
-} */
 
 .webdev .container .text-box {
     text-align: left;
@@ -482,16 +472,36 @@ section.service .container {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 2%;
-    margin-top: 50px;
+    margin:50px;
+
 
 }
 
-.webdev__flex-space {
 
+.webdev__flex-space {
     padding: 30px;
     width: 33.33%;
     text-align: left;
+
+
 }
+
+/* ! grid tests */
+/*
+.webdev__grid {
+ margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-gap: 20px;
+}
+.card__img {
+    width: 100%;
+    display: block;
+
+} */
+
+
 
 .webdev__flex-space:hover {
     transform: scale(1.1);
@@ -511,6 +521,7 @@ section.service .container {
 .webdev__flex-space-box img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .webdev__flex-space-box .webdev__flex-space-box-wraper h2 {
@@ -890,8 +901,8 @@ section.s6 >.container {
         break1 {
             display: block;
             margin-top: 0;
-
-      height: 0;
+              height: 0;
         }
+
 
     }

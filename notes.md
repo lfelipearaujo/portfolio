@@ -188,3 +188,113 @@ new fullpage('#fullpage', {
                     </div>
                     <!-- greetings  -->
 ```
+
+### Web dev section
+
+```
+   <section id="webdev" class="webdev section s5">
+            <div class="container">
+                <div class="text-box">
+                    <h2 class="title">Web Development: Practice & Personal Projects</h2>
+                    <div class="text-box-line"></div>
+                </div>
+                <!-- textbox   -->
+                <div class="webdev__flex">
+                    <div class="webdev__flex-space">
+                        <div class="webdev__flex-space-box">
+                            <img src="./capa2.png" alt="">
+                            <div class="webdev__flex-space-box-wraper">
+                                <h2>Website name: Salomé & Viola Advogados </h2>
+                                <p>Why: Personal project</p>
+                                <button><a target="_blank" href="http://salomeviola.com">Website link</a></button>
+                            </div>
+                            <!-- flex space box wraper  -->
+                        </div>
+                        <!-- webdev flex space box  -->
+                    </div>
+                    <!-- webdev flex space  -->
+                    <div class="webdev__flex-space">
+                        <div class="webdev__flex-space-box">
+                            <img src="./capa.png" alt="">
+                            <div class="webdev__flex-space-box-wraper">
+                                <h2>Website name: untitled</h2>
+                                <p>Why: Study</p>
+                                <button><a target="_blank"
+                                        href="https://lfelipearaujo.github.io/project03_menuresp/">Website
+                                        link</a></button>
+                            </div>
+                            <!-- flex space box wraper  -->
+                        </div>
+                        <!-- webdev flex space box  -->
+                    </div>
+                    <!-- webdev flex space  -->
+                    <div class="webdev__flex-space">
+                        <div class="webdev__flex-space-box">
+                            <img src="./capa3.png" alt="">
+                            <div class="webdev__flex-space-box-wraper">
+                                <h2>Website name: untitled Dashboard</h2>
+                                <p>Why: Study</p>
+                                <button><a target="_blank"
+                                        href="https://lfelipearaujo.github.io/project11_dashboard/">Website
+                                        link</a></button>
+                            </div>
+                            <!-- flex space box wraper  -->
+                        </div>
+                        <!-- webdev flex space box  -->
+                    </div>
+                    <!-- webdev flex space  -->
+                </div>
+            </div>
+            <!-- container  -->
+        </section>
+        <!-- webdev -->
+```
+
+### Grid tests card
+still have to finish
+
+```
+<div class="webdev__grid">
+                    <div class="webdev__grid_card">
+                        <img src="./capa.png" alt="" class="card__img">
+                        <div class="card__content">
+                            <h2> title</h2>
+                            <p>bodybnodybodybodybnody</p>
+
+                        </div>
+                        <div class="card__info">
+                            <div><a href="#">my lonk</a></div>
+                        </div>
+                    </div><div class="webdev__grid_card">
+                        <img src="./capa.png" alt="" class="card__img">
+                        <div class="card__content">
+                            <h2> title</h2>
+                            <p>bodybnodybodybodybnody</p>
+
+                        </div>
+                        <div class="card__info">
+                            <div><a href="#">my lonk</a></div>
+                        </div>
+                    </div><div class="webdev__grid_card">
+                        <img src="./capa.png" alt="" class="card__img">
+                        <div class="card__content">
+                            <h2> title</h2>
+                            <p>bodybnodybodybodybnody</p>
+
+                        </div>
+                        <div class="card__info">
+                            <div><a href="#">my lonk</a></div>
+                        </div>
+                    </div><div class="webdev__grid_card">
+                        <img src="./capa.png" alt="" class="card__img">
+                        <div class="card__content">
+                            <h2> title</h2>
+                            <p>bodybnodybodybodybnody</p>
+
+                        </div>
+                        <div class="card__info">
+                            <div><a href="#">my lonk</a></div>
+                        </div>
+                    </div>
+                </div>
+                ```
